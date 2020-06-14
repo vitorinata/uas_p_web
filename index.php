@@ -34,7 +34,7 @@ POS
       cursor: pointer;
 }
 .bodi {
-  background-image:url(main/images/covid.jpg);
+  background-image:url(main/covid.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

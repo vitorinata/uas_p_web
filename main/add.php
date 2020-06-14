@@ -133,7 +133,7 @@ require_once('dbConfig.php');
 	$upload_dir = 'uploads/';
 
 	if(isset($_POST['btnSave'])){
-		$nim = $_POST['nim'];
+		$nik = $_POST['nik'];
 		$nama = $_POST['nama'];
 		$alamat = $_POST['alamat'];
 		$jk = $_POST['jk'];
@@ -142,7 +142,7 @@ require_once('dbConfig.php');
 		$imgTmp = $_FILES['myfile']['tmp_name'];
 		$imgSize = $_FILES['myfile']['size'];
 
-		if(empty($nim)){
+		if(empty($nik)){
 			$errorMsg = 'Please input name';
 			}elseif(empty($nama)){
 			$errorMsg = 'Please input alamat';
@@ -173,8 +173,8 @@ require_once('dbConfig.php');
 		}
 
 		if(!isset($errorMsg)){
-			$sql = "insert into tabel(nim,nama,alamat, jk, photo)
-					values('".$nim."', '".$nama."','".$alamat."','".$jk."','".$userPic."')";
+			$sql = "insert into tabel(nik,nama,alamat, jk, photo)
+					values('".$nik."', '".$nama."','".$alamat."','".$jk."','".$userPic."')";
 			$result = mysqli_query($conn, $sql);
 			if($result){
 				$successMsg = 'Data berhasil ditambahkan';
@@ -213,8 +213,8 @@ require_once('dbConfig.php');
 	?>
 	<form action="" method="post" enctype="multipart/form-data">
 		<div>
-		<label for="nim">Nim</label>
-		<input style="height:40px; width:300px;" type="text" name="nim" class="form-control">
+		<label for="nik">Nik</label>
+		<input style="height:40px; width:300px;" type="text" name="nik" class="form-control">
 		</div>
 		<div >
 		<label for="nama">nama</label>

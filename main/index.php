@@ -195,7 +195,7 @@ div.textil{
  <table>
   <tr>
    <th>No</th>
-   <th>NIM</th>
+   <th>NIk</th>
    <th>Nama</th>
    <th>Alamat</th>
    <th>jenis kelamin</th>
@@ -209,7 +209,7 @@ div.textil{
   ?>
    <tr>
     <td><?php echo $row['id'] ?></td>
-    <td><?php echo $row['nim'] ?></td>
+    <td><?php echo $row['nik'] ?></td>
     <td><?php echo $row['nama'] ?></td>
     <td><?php echo $row['alamat'] ?></td>
     <td><?php echo $row['jk'] ?></td>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2020 at 07:05 AM
+-- Generation Time: Jun 14, 2020 at 11:10 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tabel` (
   `id` int(11) NOT NULL,
-  `nim` int(11) NOT NULL,
+  `nik` int(11) NOT NULL,
   `nama` varchar(30) CHARACTER SET latin1 NOT NULL,
   `alamat` varchar(50) CHARACTER SET latin1 NOT NULL,
   `jk` varchar(50) CHARACTER SET latin1 NOT NULL,
@@ -41,9 +41,11 @@ CREATE TABLE `tabel` (
 -- Dumping data for table `tabel`
 --
 
-INSERT INTO `tabel` (`id`, `nim`, `nama`, `alamat`, `jk`, `photo`) VALUES
-(28, 1801020019, 'I PUTU YOGIK SUWARA MAHARDI', 'fsfggdgfgd', 'laki-laki', '1592017802_8162.jpg'),
-(31, 1801020029, 'I Putu Agus Victorinata', 'Sembung Mengwi Badung Bali', 'laki-laki', '1592024557_9779.jpg');
+INSERT INTO `tabel` (`id`, `nik`, `nama`, `alamat`, `jk`, `photo`) VALUES
+(33, 180102001, 'I PUTU YOGIK SUWARA MAHARDI', 'Apartemen Ula Ilu Tower Melati Lantai 8 No.44', 'laki-laki', '1592028005_6686.jpg'),
+(34, 180102002, 'I Made Hendrwan', 'Jl. Kacang Kapri Muda Kav. 13', 'laki-laki', '1592028058_5534.jpg'),
+(35, 180102003, 'I Gede Dharma Putra', 'Jl. Cinta Boulevard No.3 RT 07/02', 'laki-laki', '1592028107_1278.jpg'),
+(36, 180102005, 'ni putu yanti', 'Duri Kepa, Kebon Jeruk, Jakarta Barat, Indonesia, ', 'wanita', '1592028319_3874.jpg');
 
 -- --------------------------------------------------------
 
@@ -90,7 +92,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `tabel`
 --
 ALTER TABLE `tabel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `user`
